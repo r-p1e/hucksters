@@ -1,0 +1,5 @@
+[Unit]
+Description=consul agent runner
+
+[Service]
+ExecStart=consul agent -data-dir /tmp/consul -node rabbitmq-first -config-dir /etc/consul.d -join "172.17.0.2"
